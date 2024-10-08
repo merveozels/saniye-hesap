@@ -1,11 +1,11 @@
-function calculateDiscount() {
-  let userSeconds = Number( document.getElementById('userSeconds').value);
-  let minute;
-  let second;
-  let hour;
-  let result;
+let girilenSaniye = Number(prompt('Saniye cinsinden bir sayı giriniz.'));
 
+let saat = Math.floor(girilenSaniye / 3600);
+girilenSaniye = girilenSaniye - (saat * 3600);
 
-//  inputtan deger almak istiyorsan (veri.value kullanilir) dont forget baby
+let dakika = Math.floor(girilenSaniye / 60);
+girilenSaniye = girilenSaniye - (dakika * 60);
 
-}
+let saniye = girilenSaniye;
+
+alert(saat + " saat, " + dakika + " dakika, " + saniye + " saniye");
